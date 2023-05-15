@@ -1,0 +1,148 @@
+.card {
+  box-shadow: 5px 5px 10px 1px #929292;
+}
+.container1:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.lightbox {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.5);
+}
+.lightbox .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 400px;
+  background: #ffffff;
+  border: 2px solid black;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.close {
+  right: 10px;
+  border: none;
+  background: none;
+}
+.close:hover {
+  transform: scale(1.2);
+}
+.img img {
+  width: 210px;
+  height: 210px;
+  border: none;
+}
+.preview-img {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+.colorFloor {
+  width: 410px;
+  height: 100%;
+  margin-left: -20px;
+  border-radius: 13px;
+}
+.colorFloor img {
+  text-align: center;
+  margin-left: 110px;
+  min-width: 20px;
+  animation: myAnim 1.7s ease 0s 1 normal forwards;
+}
+.info {
+  width: 75%;
+  height: 100%;
+  border-radius: 13px;
+}
+.normalV {
+  width: 90px;
+  height: 90px;
+}
+.normalVBack {
+  width: 90px;
+  height: 90px;
+}
+.normalVshinyBack {
+  width: 100px;
+  height: 100px;
+}
+.normalVshiny {
+  width: 100px;
+  height: 100px;
+}
+.tableStat4 {
+  height: 290px;
+  overflow: auto;
+  width: fit-content;
+  font-size: 15px;
+}
+.dataInfo {
+  display: flex;
+  height: 82%;
+  margin-top: -5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding-top: 15px;
+  justify-content: space-around;
+}
+.typePokemon p {
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  font-size: 20px;
+}
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
